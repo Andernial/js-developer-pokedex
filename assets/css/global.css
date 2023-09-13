@@ -20,6 +20,111 @@ body {
 
 }
 
+.janela-info{
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(7, 6, 6, 0.44);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 9999;
+   
+}
+
+.info{
+    
+    width: 20%;
+    height: 300px;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    border: 10px solid red;
+    
+    
+}
+.btn-fechar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.fechar{
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
 
 
+.janela-info.abrir{
+    display: flex;
+}
 
+.poke-section{
+    display: flex;
+    flex-direction: column;
+}
+.img-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img-box{
+    width: 200px;
+    height: 220px;
+    position: relative;
+    background-color: white;
+    border: 10px solid red;
+    animation: abrirmodal 1s;
+}
+
+.section-header{
+    display: flex;
+    justify-content: center;
+}
+.section-header h1{
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+}
+.information-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: .5rem;
+}
+.info-tag{
+   
+    margin-bottom: .5rem;
+}
+.species-tag{
+    margin-bottom: .5rem;
+   display: flex;
+   flex-direction: column;
+}
+
+@keyframes abrirmodal{
+    from{
+        opacity: 0;
+        transform:  translate3d(0, -20px, -5px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+
+}
+.abrir .info {
+    animation: abrirmodal 1s;
+}

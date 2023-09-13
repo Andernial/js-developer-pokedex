@@ -209,5 +209,10 @@
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
+    /* .fechar{
+        position: absolute;
+        top: 200px;
+        right: 590px;
+    } */
+    
 }
