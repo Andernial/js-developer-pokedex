@@ -32,38 +32,46 @@
 
 
     <div class="janela-info" id="janela-id">
-        <!-- <div class="img-header">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="bulba"
-                class="img-box">
-
-        </div>
-        <div class="info">
-            <div class="btn-fechar">
+         <!-- <div class="btn-fechar">
                 <button class="fechar" id="fechar">X</button>
             </div>
+        <div class="fundo">
+              <div class="img-header">
+            <img src="${pokemon.photo} " alt="bulba"
+                class="img-box ${pokemon.type}">
+                
+        <div class="info">
+           
 
             <section class="poke-section">
 
                 <header class="section-header">
                     <h1>Sobre</h1>
+
+                    <ol class="types-box">
+                        ${pokemon.types.map((type) => `<li class="type-box ${type}">${type}</li>`).join('')}
+                    </ol>
+
                 </header>
                 <div class="information-block">
                     <div class="infos">
-                        <span class="info-tag"> Species </span>
-                        <span class="info-tag">Height </span>
-                        <span class="info-tag">Weight </span>
-                        <span class="info-tag">Abilities </span>
+                        <span class="info-tag">Species</span>
+                        <span class="info-tag">Height</span>
+                        <span class="info-tag">Weight</span>
+                        <span class="info-tag">Abilities</span>
                     </div>
                     <div class="species-info">
-                        <span class="species-tag"> seed</span>
-                        <span class="species-tag"> seed</span>
-                        <span class="species-tag"> seed</span>
-                        <span class="species-tag"> overgrow,clorofil</span>
+                        <span class="species-tag">${pokemon.species}</span>
+                        <span class="species-tag">${pokemon.height} decimetres</span>
+                        <span class="species-tag">${pokemon.weight} hectograms</span>
+                        <span class="species-tag">${pokemon.abilities.join(', ')}</span>
                     </div>
                 </div>
             </section>
-
+             </div>
         </div> -->
+    
+
 
     </div>
     <script src="/assets/js/pokemon-model.js"></script>

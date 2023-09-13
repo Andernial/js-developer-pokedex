@@ -32,18 +32,14 @@ body {
     justify-content: center;
     display: none;
     z-index: 9999;
+    
    
 }
 
 .info{
-    
-    width: 20%;
+    width: 300px;
     height: 300px;
-    min-width: 300px;
-    min-height: 300px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 1rem;
-    border: 10px solid red;
+  
     
     
 }
@@ -61,7 +57,13 @@ body {
     cursor: pointer;
 }
 
-
+.fundo{
+    background-color: rgb(123,31,31);
+    background: linear-gradient(90deg, rgba(123,31,31,1) 0%, rgba(255,0,0,1) 39%, rgba(231,5,5,1) 66%, rgba(45,45,45,1) 100%);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 5px;
+}
 .janela-info.abrir{
     display: flex;
 }
@@ -74,34 +76,39 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .img-box{
     width: 200px;
     height: 220px;
     position: relative;
     background-color: white;
-    border: 10px solid red;
-    animation: abrirmodal 1s;
+    border: 10px solid rgb(255, 255, 255);
 }
 
 .section-header{
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .section-header h1{
-    margin-top: 0;
-    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
 }
 .information-block{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: white;
+    text-align: center;
 }
 .infos{
     display: flex;
     flex-direction: column;
     width: 40%;
-    margin-left: .5rem;
+
 }
 .info-tag{
    
@@ -112,7 +119,20 @@ body {
    display: flex;
    flex-direction: column;
 }
-
+.types-box{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+   
+}
+.type-box{
+    margin-right: 2rem;
+    border-radius: 5px;
+    padding: .5rem;
+    filter: brightness(1.1);
+}
 @keyframes abrirmodal{
     from{
         opacity: 0;
@@ -125,6 +145,6 @@ body {
     }
 
 }
-.abrir .info {
+.abrir .info, .img-box, .fundo {
     animation: abrirmodal 1s;
 }
